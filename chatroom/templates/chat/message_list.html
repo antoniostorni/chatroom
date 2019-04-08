@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% load static i18n %}
+{% block title %}Members{% endblock %}
+
+{% block content %}
+<div class="container">
+  <h2>Messages</h2>
+
+  <div class="list-group">
+    {% for message in message_list %}
+        <h4 class="list-group-item-heading">{{ message.user }}: {{ message.content }}</h4>
+    {% endfor %}
+  </div>
+</div>
+{% endblock content %}
