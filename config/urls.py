@@ -15,7 +15,7 @@ urlpatterns = [
     # User management
     path("users/", include("chatroom.users.urls", namespace="users")),
     path("accounts/", include("allauth.urls")),
-    path("messages/", include("chatroom.chat.urls", namespace="chatroom")),
+    path("chat/", include("chatroom.chat.urls", namespace="chatroom")),
     # Your stuff: custom urls includes go here
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
