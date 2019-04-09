@@ -26,7 +26,7 @@ docker-compose -f local.yml up
 Celery
 ^^^^^^
 
-This app comes with Celery.
+This app comes with Celery and Redis.
 
 To run a celery worker:
 
@@ -38,17 +38,15 @@ To run a celery worker:
 Please note: For Celery's import magic to work, it is important *where* the celery commands are run. If you are in the same folder with *manage.py*, you should be right.
 
 
-
 App usage
 ^^^^^^
 
-http://localhost:8000/admin/
+It's convenient to create a superuser to test first.
 
-Add chat rooms:
-http://localhost:8000/admin/chat/room/
+http://localhost:8000/
 
-List messages
-http://localhost:8000/messages/
+New users can be created, but the email backend is not configured on the
+development environment.
 
-Add messages
-http://localhost:8000/messages/add/
+You can enable a user by checking the console messages, look at the confirmation URL
+and open it on a browser.
