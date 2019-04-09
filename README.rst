@@ -50,3 +50,5 @@ development environment.
 
 You can enable a user by checking the console messages, look at the confirmation URL
 and open it on a browser.
+
+You can use the app with the top bar navigation menu.
